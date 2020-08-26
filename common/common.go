@@ -16,10 +16,23 @@ const (
 	TomoChainMainnetNetWorkId = 88
 
 	// text
-	SUCSESS                  = "SUCCESS"
-	FAIL                     = "FAIL"
-	METADATA_NEW_BALANCE     = "new_balance"
-	METADATA_SEQUENCE_NUMBER = "sequence_number"
+	SUCSESS                    = "SUCCESS"
+	FAIL                       = "FAIL"
+	METADATA_NEW_BALANCE       = "new_balance"
+	METADATA_SEQUENCE_NUMBER   = "sequence_number"
+	METADATA_ACCOUNT_SEQUENCE  = "account_sequence"
+	METADATA_RECENT_BLOCK_HASH = "recent_block_hash"
+	METADATA_GAS_LIMIT         = "gas_limit"
+	METADATA_GAS_PRICE         = "gas_price"
+	METADATA_RECIPIENT         = "recipient"
+	METADATA_SENDER            = "sender"
+	METADATA_TRANSACTION_TYPE  = "type"
+	METADATA_TRANSACTION_VALUE = "value"
+	METADATA_TRANSACTION_DATA  = "data"
+
+	// rpc method name
+	RPC_METHOD_SEND_SIGNED_TRANSACTION  = "eth_sendRawTransaction"
+	RPC_METHOD_GET_PENDING_TRANSACTIONS = "eth_pendingTransactions"
 )
 
 type RPCTransaction struct {
